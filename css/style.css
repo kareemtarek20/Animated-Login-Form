@@ -50,22 +50,21 @@ body {
 
 /* Container for login form */
 .container {
-  width: 400px; /* Initial width */
-  background: rgba(255, 255, 255, 0.342);
-  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.822);
+  border-radius: 1rem;
+  padding: 2rem;
   position: absolute;
-  left: 50%;
+  width: 350px;
+  left: 28%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.8;
+  transform: translateY(-50%);
 }
-
 /* Media query for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
-    width: 90%; /* Adjust the width for smaller screens */
-    max-width: 400px; /* Limit maximum width */
-    padding: 20px;
+    position: static;
+    margin: 0 auto;
+    transform: none;
   }
 }
 /* Styling for input fields and buttons */
@@ -178,28 +177,6 @@ form .button {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Social icon styling */
-.social-icon {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-/* Last social icon margin fix */
-.social-icon:last-child {
-  margin-right: 0;
-}
-
-/* Social icon base styling */
-.social-icon i {
-  color: rgb(138, 138, 138);
-  font-size: 24px; /* Icon Size */
-}
-
-/* Social icon hover effect */
-.social-icon:hover i {
-  color: grey; /* Icon hover color */
-}
-
 /* Authentication message styling */
 .container .auth {
   margin: 35px 0 20px 0;
@@ -213,7 +190,7 @@ form .button {
   font-size: 18px;
   padding: 35px;
   text-align: center;
-  margin: 3rem;
+  margin: 2rem;
   right: 0;
   left: 0;
   bottom: 0;
