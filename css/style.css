@@ -65,7 +65,7 @@ body {
 /* Container for login form */
 .container {
   background-color: rgba(255, 255, 255, 0.822);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   position: absolute;
   width: 350px;
@@ -211,21 +211,7 @@ form .button {
   justify-self: center;
 }
 
-/* Language link styling */
-.language a {
-  text-decoration: none; /* Remove the underline from links */
-  color: grey; /* Set the text color */
-  font-weight: bold; /* Make the text bold */
-  padding: 8px 5px; /* Padding inside the links */
-  border-radius: 2px; /* Rounded corners for the links */
-  transition: all 0.3s; /* Smooth transition for hover effects */
-}
 
-/* Language link hover effect */
-.language a:hover {
-  background-color: #00dbde; /* Background color on hover */
-  color: white; /* Text color on hover */
-}
 
 /* Copyright notice styling */
 .copyright {
@@ -263,4 +249,18 @@ form .button {
 
 .social-icons .icon:last-child {
   margin-right: 0;
+}
+
+/* language styling */
+
+.language {
+  position: relative;
+  color: #747474;
+  margin: 0;
+  padding: 0;
+}
+
+.language a {
+  color: #747474;
+  text-decoration: none;
 }
