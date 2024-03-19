@@ -43,6 +43,20 @@ body {
   z-index: -1;
   background-repeat: no-repeat;
 }
+
+@media (max-aspect-ratio: 16/9) {
+  #myVideo {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
 /* Logo image styling */
 .logo {
   width: 180px;
@@ -55,7 +69,7 @@ body {
   padding: 2rem;
   position: absolute;
   width: 350px;
-  left: 28%;
+  left: 22%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -209,7 +223,7 @@ form .button {
 
 /* Language link hover effect */
 .language a:hover {
-  background-color: rgb(218, 52, 10); /* Background color on hover */
+  background-color: #00dbde; /* Background color on hover */
   color: white; /* Text color on hover */
 }
 
@@ -230,4 +244,23 @@ form .button {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons .icon {
+  margin-right: 10px;
+  color: #1d1c1c; /* Change color as needed */
+}
+
+.social-icons .icon:last-child {
+  margin-right: 0;
 }
