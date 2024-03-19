@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- The document type declaration, defining this document as HTML5 -->
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Metadata about the document -->
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome script for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- FontAwesome stylesheet for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  </head>
+  <div class="video-container">
+  <video id="myVideo" autoplay loop muted>
+    <source src="images/1.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <body>
+    <!-- Container for the entire page content -->
+    <div class="container">
+      <div class="container_wrapper">
+      <!-- Header section with logo -->
+      <header>
+        <img src="images/logo.png" alt="logo" class="logo" />
+      </header>
+      <!-- Login form -->
+      <form>
+        <!-- Input field for email -->
+        <div class="input-field">
+          <input type="text" required />
+          <label>Email</label>
+        </div>
+        <!-- Input field for password -->
+        <div class="input-field">
+          <input class="pswrd" type="password" required />
+          <!-- Toggle button for showing/hiding password -->
+          <span class="show">SHOW</span>
+          <label>Password</label>
+        </div>
+        <!-- Login button -->
+        <div class="button">
+          <div class="inner"></div>
+          <button>LOGIN</button>
+        </div>
+      </form>
+      </div>
+    </div>
+    <!-- Background element -->
+    <div class="bg"></div>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-wrapper">
+        <!-- Language switch links -->
+        <div class="language">
+          <a href="#">English</a>
+          <a href="#">عربي</a>
+        </div>
+        <!-- Social media icon links -->
+        <div class="social-icons">
+          <a href="https://facebook.com" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com" class="social-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <!-- Copyright notice -->
+        <div class="copyright">
+          <p>
+            Copyright ©
+            <!-- Script to automatically update the year -->
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            STPS SOFTWARE
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Script for toggling password visibility -->
+    <script>
+      var input = document.querySelector(".pswrd");
+      var show = document.querySelector(".show");
+      show.addEventListener("click", active);
+      function active() {
+        if (input.type === "password") {
+          input.type = "text";
+          show.style.color = "#1DA1F2";
+          show.textContent = "HIDE";
+        } else {
+          input.type = "password";
+          show.textContent = "SHOW";
+          show.style.color = "#111";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap");
+
+/* Universal base styles */
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Main content area styling */
+main {
+  margin: auto;
+  width: 80%;
+  padding-top: 32px;
+}
+
+/* HTML and body base styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Body styling */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+#myVideo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+/* Logo image styling */
+.logo {
+  width: 180px;
+}
+
+/* Container for login form */
+.container {
+  width: 400px; /* Initial width */
+  background: rgb(255, 255, 255);
+  padding: 30px 20px;
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust the width for smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    padding: 20px;
+  }
+}
+/* Styling for input fields and buttons */
+.input-field,
+form .button {
+  margin: 25px 0;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+/* Input field base styling */
+.input-field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid silver;
+  padding-left: 15px;
+  outline: none;
+  font-size: 19px;
+  transition: 0.4s;
+}
+
+/* Input field focus styling */
+input:focus {
+  border: 1px solid #1da1f2;
+}
+
+/* Label and 'show password' button styling */
+.input-field label,
+span.show {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Label base styling */
+.input-field label {
+  left: 15px;
+  pointer-events: none;
+  color: grey;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+/* 'Show password' button styling */
+span.show {
+  right: 20px;
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  visibility: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Make 'show password' button visible when input is valid */
+input:valid ~ span.show {
+  visibility: visible;
+}
+
+/* Label transformation when input is focused or valid */
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-33px);
+  background: white;
+  font-size: 16px;
+  color: #1da1f2;
+}
+
+/* Button container styling */
+form .button {
+  margin-top: 30px;
+  overflow: hidden;
+  z-index: 111;
+}
+
+/* Animated background for button */
+.button .inner {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  z-index: -1;
+  transition: all 0.4s;
+  background: -webkit-linear-gradient(
+    right,
+    #de0038,
+    #ffae00,
+    #00dbde,
+    #ffae00
+  );
+}
+
+/* Button hover effect */
+.button:hover .inner {
+  left: 0;
+}
+
+/* Button text styling */
+.button button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Social icon styling */
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Last social icon margin fix */
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+/* Social icon base styling */
+.social-icon i {
+  color: rgb(138, 138, 138);
+  font-size: 24px; /* Icon Size */
+}
+
+/* Social icon hover effect */
+.social-icon:hover i {
+  color: grey; /* Icon hover color */
+}
+
+/* Authentication message styling */
+.container .auth {
+  margin: 35px 0 20px 0;
+  font-size: 19px;
+  color: grey;
+}
+
+/* Language switcher styling */
+.language {
+  position: absolute;
+  font-size: 18px;
+  padding: 35px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-self: left;
+}
+
+/* Language link styling */
+.language a {
+  text-decoration: none; /* Remove the underline from links */
+  color: grey; /* Set the text color */
+  font-weight: bold; /* Make the text bold */
+  padding: 8px 5px; /* Padding inside the links */
+  border-radius: 2px; /* Rounded corners for the links */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Language link hover effect */
+.language a:hover {
+  background-color: rgb(218, 52, 10); /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Copyright notice styling */
+.copyright {
+  font-size: small;
+  text-align: center;
+  padding: 10px 0;
+  color: grey;
+}
+
+/* Footer wrapper styling */
+.footer-wrapper {
+  position: absolute;
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
