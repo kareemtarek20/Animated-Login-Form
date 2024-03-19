@@ -64,14 +64,13 @@ body {
 
 /* Container for login form */
 .container {
-  background-color: white;
-  border: solid #3d5a80;
+  background-color: rgba(255, 255, 255, 0.507);
   border-radius: 0.2rem;
   padding: 2rem;
   position: absolute;
   width: 350px;
-  left: 10%;
-  top: 45%;
+  left: 20%;
+  top: 50%;
   transform: translateY(-50%);
 }
 /* Media query for smaller screens */
@@ -165,18 +164,13 @@ form .button {
   left: -100%;
   z-index: -1;
   transition: all 0.4s;
-  background: -webkit-linear-gradient(
-    right,
-    #de0038,
-    #ffae00,
-    #00dbde,
-    #ffae00
-  );
+  background: #b1acb4;
 }
 
 /* Button hover effect */
 .button:hover .inner {
   left: 0;
+  background: #747474;
 }
 
 /* Button text styling */
