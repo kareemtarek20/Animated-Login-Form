@@ -65,11 +65,12 @@ body {
 /* Container for login form */
 .container {
   background-color: rgba(255, 255, 255, 0.507);
-  border-radius: 0.2rem;
+  border: solid #ece6f1;
+  border-radius: 0.8rem;
   padding: 2rem;
   position: absolute;
-  width: 350px;
-  left: 20%;
+  width: 380px;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -103,7 +104,7 @@ form .button {
 
 /* Input field focus styling */
 input:focus {
-  border: 1px solid #3d5a80;
+  border: 1px solid #5288ce;
 }
 
 /* Label and 'show password' button styling */
@@ -146,7 +147,7 @@ input:valid ~ label {
   transform: translateY(-33px);
   background: white;
   font-size: 16px;
-  color: #3d5a80;
+  color: #5288ce;
 }
 
 /* Button container styling */
@@ -164,13 +165,25 @@ form .button {
   left: -100%;
   z-index: -1;
   transition: all 0.4s;
-  background: #b1acb4;
+  background: -webkit-linear-gradient(
+    right,
+    #de0038,
+    #ffae00,
+    #00dbde,
+    #ffae00
+  );
 }
 
 /* Button hover effect */
 .button:hover .inner {
   left: 0;
-  background: #747474;
+  background: -webkit-linear-gradient(
+    right,
+    #de0038,
+    #ffae00,
+    #00dbde,
+    #ffae00
+  );
 }
 
 /* Button text styling */
@@ -254,6 +267,7 @@ form .button {
 }
 
 .language a {
-  color: #ffffff;
+  font-weight: bold;
+  color: #111111;
   text-decoration: none;
 }
