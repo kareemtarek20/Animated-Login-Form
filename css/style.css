@@ -51,13 +51,13 @@ body {
 /* Container for login form */
 .container {
   width: 400px; /* Initial width */
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.342);
   padding: 30px 20px;
   position: absolute;
-  left: 28%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* Media query for smaller screens */
@@ -213,10 +213,11 @@ form .button {
   font-size: 18px;
   padding: 35px;
   text-align: center;
+  margin: 3rem;
   right: 0;
   left: 0;
   bottom: 0;
-  justify-self: left;
+  justify-self: center;
 }
 
 /* Language link styling */
