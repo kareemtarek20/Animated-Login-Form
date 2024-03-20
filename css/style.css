@@ -257,17 +257,32 @@ form .button {
   margin-right: 0;
 }
 
+.social-icons :hover{
+  color: #5288ce;
+  border: #5288ce;
+}
+
 /* language styling */
 
 .language {
-  position: relative;
+  top: 2%;
+  justify-content: space-between;
+  position: fixed;
+  display: block;
   color: #747474;
   margin: 0;
   padding: 0;
 }
 
 .language a {
+  justify-content: space-between;
+  top: 0;
   font-weight: bold;
-  color: #111111;
+  color: #2c2c2c;
   text-decoration: none;
+}
+
+.language a:hover {
+  color: #5288ce;
+  border: #5288ce;
 }
